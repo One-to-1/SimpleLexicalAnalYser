@@ -4,37 +4,6 @@
 #include <string.h>
 #include <ctype.h>
 
-int isArithmeticOperator(const char* sequence) {
-    const char* operators[] = {"+", "-", "*", "/", "^", "%"};
-    for (int i = 0; i < sizeof(operators) / sizeof(operators[0]); i++) {
-        if (strcmp(sequence, operators[i]) == 0) {
-            return 1;
-        }
-    }
-    return 0;
-}
-
-int isAssignmentOperator(const char* sequence) {
-    const char* operators[] = {"=","+=","-=","/=","*="};
-    for (int i = 0; i < sizeof(operators) / sizeof(operators[0]); i++) {
-        if (strcmp(sequence, operators[i]) == 0) {
-            return 1;
-        }
-    }
-    return 0;
-}
-
-
-int isRelationalOperator(const char* sequence) {
-    const char* operators[] = {"==", "!=", "<", "<=", ">", ">="};
-    for (int i = 0; i < sizeof(operators) / sizeof(operators[0]); i++) {
-        if (strcmp(sequence, operators[i]) == 0) {
-            return 1;
-        }
-    }
-    return 0;
-}
-
 int main()
 {
     FILE *fp, *fop, *fsym, *fnum;
