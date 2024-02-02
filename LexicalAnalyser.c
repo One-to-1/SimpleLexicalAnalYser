@@ -65,7 +65,7 @@ int main()
                 }
                 else{
                     printf("Invalid character %c\n", ch);
-                    exit(0);
+                    fseek(fp, 1, SEEK_CUR);
                 }
                 break;
             case 1:
@@ -142,7 +142,7 @@ int main()
                 }
                 else{
                     printf("Invalid character %c\n", ch);
-                    exit(0);
+                    fseek(fp, 1, SEEK_CUR);
                 }
                 break;
             case 7:
@@ -177,7 +177,7 @@ int main()
                 }
                 else{
                     printf("Invalid character %c\n", ch);
-                    exit(0);
+                    fseek(fp, 1, SEEK_CUR);
                 }
                 break;
             case 9:
@@ -190,7 +190,7 @@ int main()
                 }
                 else{
                     printf("Invalid character %c\n", ch);
-                    exit(0);
+                    fseek(fp, 1, SEEK_CUR);
                 }
                 break;
             case 10:
@@ -249,7 +249,7 @@ int main()
                 }
                 else{
                     printf("Invalid character %c\n", ch);
-                    exit(0);
+                    fseek(fp, 1, SEEK_CUR);
                 }
                 break;
             case 15:
@@ -392,7 +392,7 @@ int main()
                 }
                 else{
                     printf("Invalid character %c\n", ch);
-                    exit(0);
+                    fseek(fp, 1, SEEK_CUR);
                 }
                 break;
             case 38:
