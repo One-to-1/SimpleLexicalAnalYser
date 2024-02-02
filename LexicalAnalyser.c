@@ -229,6 +229,13 @@ int main()
                 }
                 else if (ch == '-'){
                     buffer[buf_idx++] = ch;
+                    if(isdigit(ch = fgetc(fp))){
+                        buffer[buf_idx++] = ch;
+                        state = 5;
+                        break;
+                    }else{
+                        fseek(fp,-1,SEEK_CUR);
+                    }
                     state = 28;
                 }
                 else if (ch == '*'){
