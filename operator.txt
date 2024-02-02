@@ -1,0 +1,7 @@
+	1			=			AssOp
+	2			=			AssOp
+	3			=			AssOp
+	4			+			ArOp
+	5			%			ArOp
+	6			%			ArOp
+	7			%			ArOp
