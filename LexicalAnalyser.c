@@ -425,6 +425,11 @@ int main()
             }
         }
     }
+
+    fclose(fp);
+    fclose(fop);
+    fclose(fsym);
+    fclose(fnum);
     
     return 0;
 }
